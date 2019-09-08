@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bagus.lpmproject.Bidang1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eksistensi Masjid dan Aspek Pendukungnya"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/nmasjid"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:inputType="text"
+            android:background="@drawable/underline"
+            android:hint="Nama Masjid"/>
+        <EditText
+            android:id="@+id/adres"
+            android:padding="10dp"
+            android:layout_below="@+id/nmasjid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Alamat Masjid"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/Luasbangun"
+            android:padding="10dp"
+            android:layout_below="@+id/adres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Luas Bangunan"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/imb"
+            android:padding="10dp"
+            android:layout_below="@+id/Luasbangun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="IMB"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/Luas"
+            android:padding="10dp"
+            android:layout_below="@+id/imb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Luas Lahan"
+            android:background="@drawable/underline"/>
+
+        <EditText
+            android:id="@+id/sertifikat"
+            android:padding="10dp"
+            android:layout_below="@+id/Luas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Sertifikat"
+            android:background="@drawable/underline"/>
+        <TextView
+            android:id="@+id/milik"
+            android:layout_below="@+id/sertifikat"
+            android:text="Status Kepemilikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/status"
+            android:layout_below="@+id/milik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/keluarga"
+                android:text="Keluarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/yayasan"
+                android:text="Yayasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/wakaf"
+                android:text="Wakaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/surat"
+            android:padding="10dp"
+            android:layout_below="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surat Wakaf"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/asaljamaah"
+            android:layout_below="@+id/surat"
+            android:padding="10dp"
+            android:hint="Asal Jamaah"
+            android:layout_width="match_parent"
+            android:background="@drawable/underline"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/lanjut"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/asaljamaah"
+            android:text="Next"
+            android:textColor="#f2f4f7"
+            android:background="@drawable/round"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

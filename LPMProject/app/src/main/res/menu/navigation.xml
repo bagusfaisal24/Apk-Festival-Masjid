@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_bidang1"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_bidang1" />
+
+    <item
+        android:id="@+id/navigation_bidang2"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_bidang2" />
+
+    <item
+        android:id="@+id/navigation_bidang3"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_bidang3" />
+    <item
+        android:id="@+id/navigation_bidang4"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_bidang4" />
+
+</menu>

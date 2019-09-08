@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bagus.lpmproject.Bidang12">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Penduduk"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/umur1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2"
+            android:padding="10dp"
+            android:hint="Umur kurang 12 tahun"
+            android:inputType="number"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/umur2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/umur1"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/t2"
+            android:background="@drawable/underline"
+            android:hint="Umur 12-17 tahun"
+            android:inputType="number"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/umur3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/umur1"
+            android:inputType="number"
+            android:padding="10dp"
+            android:hint="Umur 18-60 tahun"
+            android:background="@drawable/underline"/>
+        <EditText
+            android:id="@+id/umur4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/umur3"
+            android:layout_below="@+id/umur2"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/underline"
+            android:inputType="number"
+            android:hint="Umur lebih 60 tahun"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/t3"
+            android:layout_below="@+id/umur3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Agama"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tdksholat"
+            android:layout_below="@+id/t3"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Tidak Sholat (Islam)"/>
+        <EditText
+            android:id="@+id/sholat"
+            android:layout_below="@+id/t3"
+            android:layout_toRightOf="@+id/tdksholat"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Sholat(Islam)"/>
+        <EditText
+            android:id="@+id/berjamaah"
+            android:layout_below="@+id/tdksholat"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Aktif Berjamaah(Islam)"/>
+
+        <EditText
+            android:id="@+id/aktfibadah"
+            android:layout_below="@+id/berjamaah"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Aktif ibadah (Non Islam)"/>
+        <EditText
+            android:id="@+id/tdkibadah"
+            android:layout_below="@+id/aktfibadah"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Tidak Aktif ibadah (Non Islam)"/>
+        <EditText
+            android:id="@+id/longi"
+            android:layout_below="@+id/tdkibadah"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Longitude"/>
+        <EditText
+            android:id="@+id/lati"
+            android:layout_below="@+id/longi"
+            android:background="@drawable/underline"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="latitude"/>
+
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lati"
+            android:textColor="#f2f4f7"
+            android:text="SIMPAN"
+            android:background="@drawable/round"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

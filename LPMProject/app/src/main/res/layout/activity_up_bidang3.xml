@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bagus.lpmproject.UpBidang3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surat"
+                android:text="Sarana dan Prasarana"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/twudlu"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sarana"
+                android:text="Tempat Wudlu" />
+            <RadioGroup
+                android:id="@+id/wudlu"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/wudlu1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/wudlu2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/ttoilet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wudlu"
+                android:text="Kamar mandi dan toilet" />
+            <RadioGroup
+                android:id="@+id/toilet"
+                android:layout_below="@+id/ttoilet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/toilet1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/toilet2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toilet"
+                android:text="Ketersediaan/kecukupan air" />
+            <RadioGroup
+                android:id="@+id/ketersediaanair"
+                android:layout_below="@+id/tair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/air1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/air2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tsound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ketersediaanair"
+                android:text="Sound System" />
+            <RadioGroup
+                android:id="@+id/Soundsystem"
+                android:layout_below="@+id/tsound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/sound1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/sound2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tgudang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Soundsystem"
+                android:text="Gudang penyimpanan barang" />
+            <RadioGroup
+                android:id="@+id/Gudangpenyimpananbarang"
+                android:layout_below="@+id/tgudang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/gudang1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/gudang2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tparkir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lahan parkir" />
+            <RadioGroup
+                android:id="@+id/lahanparkir"
+                android:layout_below="@+id/tparkir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/parkir1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/parkir2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tkantor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lahanparkir"
+                android:text="Ruang/ kantor takmir" />
+            <RadioGroup
+                android:id="@+id/kantor"
+                android:layout_below="@+id/tkantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/kantor1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/kantor2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tjarak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kantor"
+                android:text="ada jarak antara tempat wudlu dengan kamar mandi/toilet" />
+            <RadioGroup
+                android:id="@+id/jaraktempatwudlu"
+                android:layout_below="@+id/tjarak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/jarak1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/jarak2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tperpus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jaraktempatwudlu"
+                android:text="Perpustaan: ketersediaan pustaka dan ruang baca" />
+            <RadioGroup
+                android:id="@+id/perpus"
+                android:layout_below="@+id/tperpus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/perpus1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/perpus2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tsoundaudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound system dan Audio Visual" />
+            <RadioGroup
+                android:id="@+id/audio"
+                android:layout_below="@+id/tsoundaudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/audio1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/audio2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projector" />
+            <RadioGroup
+                android:id="@+id/projector"
+                android:layout_below="@+id/tsoundaudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/projector1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/projector2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tinap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perpus"
+                android:text="Penginapan tamu" />
+            <RadioGroup
+                android:id="@+id/inap"
+                android:layout_below="@+id/tinap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/inap1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/inap2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/ttaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Taman yang menjadi pemisah antara tempat wudlu dengan toilet" />
+            <RadioGroup
+                android:id="@+id/taman"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/taman1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/taman2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Sarana lainnya (Komputer, internet)" />
+            <RadioGroup
+                android:id="@+id/sarana"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/sarana1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/sarana2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surat"
+                android:text="Keorganisasian"
+                android:textSize="20dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Petugas : muadzin,  imam, marbot" />
+            <RadioGroup
+                android:id="@+id/petugas"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/petugas1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/petugas2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Daftar kepengurusan takmir" />
+            <RadioGroup
+                android:id="@+id/takmir"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/takmir1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/takmir2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Surat-menyurat dan/atau dokumentasi " />
+            <RadioGroup
+                android:id="@+id/surat"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/surat1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/surat2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Kualitas Surat-menyurat dan/atau dokumentasi, catatan inventaris " />
+            <RadioGroup
+                android:id="@+id/kualitas"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/kualitas1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/kualitas2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Visi dan misi " />
+            <RadioGroup
+                android:id="@+id/visi"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/visi1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/visi2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Kepengurusan remaja masjid " />
+            <RadioGroup
+                android:id="@+id/remas"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/remas1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/remas2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inap"
+                android:text="Yayasan yang menaungi masjid" />
+            <RadioGroup
+                android:id="@+id/yayasan"
+                android:layout_below="@+id/ttaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/yayasan1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/yayasan2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taman"
+                android:layout_margin="10dp"
+                android:textColor="#f2f4f7"
+                android:background="@drawable/round"
+                android:text="UPDATE" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

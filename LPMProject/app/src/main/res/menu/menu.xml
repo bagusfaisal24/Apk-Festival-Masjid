@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="Profil"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+    <!--<item-->
+        <!--android:id="@+id/data"-->
+        <!--android:title="Data Masjid">-->
+
+         <!--<menu>-->
+
+            <!--<item-->
+                <!--android:id="@+id/bidang1"-->
+                <!--android:title="Bidang satu"/>-->
+            <!--<item-->
+                <!--android:id="@+id/bidang2"-->
+                <!--android:title="Bidang dua"/>-->
+            <!--<item-->
+                <!--android:id="@+id/bidang3"-->
+                <!--android:title="Bidang tiga"/>-->
+            <!--<item-->
+                <!--android:id="@+id/bidang4"-->
+                <!--android:title="Bidang empat"/>-->
+         <!--</menu>-->
+    <!--</item>-->
+</menu>
+

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bagus.lpmproject.Bidang4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kegiatan TPA (Belajar Membaca Al Qur’an)" />
+            <RadioGroup
+                android:id="@+id/tpa"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/tpa1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/tpa2"
+                    android:text="tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengajian anak-anak (Belajar ttg keimanan, taharah, doa-doa, dll)" />
+            <RadioGroup
+                android:id="@+id/anak"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/anak1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/anak2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kegiatan seni budaya" />
+            <RadioGroup
+                android:id="@+id/seni"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/seni1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/seni2"
+                    android:text="Tidak "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peringatan Hari Besar Islam " />
+            <RadioGroup
+                android:id="@+id/phbi"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/phbi1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/phbi2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyelenggaraan pengajian umum" />
+            <RadioGroup
+                android:id="@+id/pengajian"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/pengajian1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/pengajian2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kegiatan olahraga" />
+            <RadioGroup
+                android:id="@+id/olahraga"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/olahraga1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/olahraga2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tadarus" />
+            <RadioGroup
+                android:id="@+id/Tadarusr"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/Tadarus1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/Tadarus2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kajian keagamaan (selain tafsir dan hadits)" />
+            <RadioGroup
+                android:id="@+id/kajian"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/kajian1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/kajian2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyelenggaraan pengajian berdasarkan gender dan/atau usia " />
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/gender1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/gender2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kegiatan pemberdayaan masyarakat " />
+            <RadioGroup
+                android:id="@+id/msy"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/msy1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msy2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kegiatan kependidikan (kursus khatib/imam/muadzin dan pendidikan kader)" />
+            <RadioGroup
+                android:id="@+id/pendidikan"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/pendidikan1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/pendidikan2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyelenggaraan aktivitas (pentas, pergelaran, pameran, bazaar, dll)" />
+            <RadioGroup
+                android:id="@+id/pentas"
+                android:layout_below="@+id/twudlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/pentas1"
+                    android:text="ada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/pentas2"
+                    android:text="Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kajian tafsir dan hadits" />
+                <RadioGroup
+                    android:id="@+id/tafsir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/tafsir1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/tafsir2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Madrasah" />
+                <RadioGroup
+                    android:id="@+id/Madrasah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/Madrasah1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/Madrasah2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taman kanak kanak (TK)" />
+                <RadioGroup
+                    android:id="@+id/tk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/tk1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/tk2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekolah dasar (SD)" />
+                <RadioGroup
+                    android:id="@+id/sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/sd1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/sd2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekolah menengah pertama (SMP)" />
+                <RadioGroup
+                    android:id="@+id/smp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/smp1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/smp2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekolah menengah atas (SMA)" />
+                <RadioGroup
+                    android:id="@+id/sma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/sma1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/sma2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memiliki amal usaha selain kependidikan (klinik, warung, BMT, jasa)" />
+                <RadioGroup
+                    android:id="@+id/klinik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/klinik1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/klinik2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memiliki rumah tahfidz" />
+                <RadioGroup
+                    android:id="@+id/tahfiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/tahfiz1"
+                        android:text="ada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/tahfiz2"
+                        android:text="Tidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/smpn"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textColor="#f2f4f7"
+                android:background="@drawable/round"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
